@@ -112,7 +112,7 @@ class PFSSection(FirmwareObject, BaseObject):
         pass
 
     def showinfo(self, ts='', index=None):
-        print "%s%s %s spec %d ts %d type %d version %d size 0x%x (%d bytes)" % (
+        print "%s%s %s spec 0x%02x ts 0x%02x type 0x%02x version 0x%02x size 0x%x (%d bytes)" % (
             ts, blue("Dell PFSSection:"), green(sguid(self.uuid)),
             self.spec, self.ts, self.type, self.version,
             self.section_size, self.section_size

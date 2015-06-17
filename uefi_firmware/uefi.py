@@ -1109,7 +1109,7 @@ class FirmwareVolume(FirmwareObject):
         if not self.valid_header or len(self.data) == 0:
             return
 
-        print "%s %s attr 0x%08x, rev %d, cksum 0x%x, size 0x%x (%d bytes)" % (
+        print "%s %s attr 0x%08x, rev %s, cksum 0x%x, size 0x%x (%d bytes)" % (
             blue("%sFirmware Volume:" % (ts)),
             green(sguid(self.guid)),
             self.attributes,
